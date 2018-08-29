@@ -167,7 +167,7 @@ def user_input_requirements():
 
     warning = 3
     
-    users_guess_history = []
+    #users_guess_history = []
     
     while warning > 0:
         
@@ -490,7 +490,7 @@ def user_input_requirements_with_hints(secret_word, letters_guessed, num_of_gues
 
     warning = 3
     
-    users_guess_history = []
+    #users_guess_history = []
     
     while warning >=  0:
         
@@ -583,11 +583,11 @@ def hangman_with_hints(secret_word):
         #Take in the user's guess with the user_input_requirement function
         (users_guess) = user_input_requirements_with_hints(secret_word, letters_guessed, num_of_guesses_left)
         
-        if users_guess in letters_guessed:
+        #if users_guess in letters_guessed:
             
-            warning -= 1
+            #warning -= 1
             
-            print("Letter already guessed")
+            #print("Letter already guessed")
         
         letters_guessed.append(users_guess)
    
